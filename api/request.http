@@ -1,0 +1,28 @@
+http://localhost:3005/users
+
+### 
+http://localhost:3005/users/1
+
+###
+POST http://localhost:3005/users HTTP/1.1
+content-type: application/json
+
+{
+  "username": "cookie123",
+  "bio": "I am a cookie"
+}
+
+
+###
+PUT http://localhost:3005/users/1 HTTP/1.1
+content-type: application/json
+
+{
+  "username": "Updated name",
+  "bio": "Updated bio"
+}
+
+
+###
+DELETE http://localhost:3005/users/2 HTTP/1.1
+content-type: application/json
